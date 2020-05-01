@@ -9,11 +9,11 @@ Aujourd'hui nous allons enfin nous attaquer à la pratique, faire de vrais progr
 ___
 **Vue code**
 
-** Apparition du code HelloWorld1.cpp, numéro de lignes cachées**
+*Apparition du code HelloWorld1.cpp, numéro de lignes cachées*
 
 *(voix douce)* Un programme qui dit bonjour.
 
-**zoom résultat**
+*zoom résultat*
 
 *(voix fluette)* Bonjour !
 
