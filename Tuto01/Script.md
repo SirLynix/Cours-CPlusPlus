@@ -57,4 +57,38 @@ Juste après, nous avons une ligne assez mystérieuse. Un nom de type suivi d'un
 ___
 **Vue caméra**
 
-Une fonction, tirant son nom des mathématiques, est l'endroit où s'exécute votre code. En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions.
+Une fonction, tirant son nom des mathématiques, est l'endroit où s'exécute votre code. En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions. On aura l'occasion d'en reparler des fonctions, pour l'instant retenez surtout que tout programme, quel qu'il soit (exemples ?), s'exécute dans une fonction main et que lorsqu'il en sort, il est terminé.
+
+___
+**Vue code**
+
+Ensuite, nous avons ce qu'on appelle un bloc. Un bloc commence par une accolade ouvrante et se termine par une accolade fermante. Cette notion va être importante pour la suite.
+
+Dans ce cas-ci, le bloc sert à définir le contenu de la fonction main, l'ensemble du code qu'elle contient.
+
+Petite remarque à ce propos, le C++ fait partie des langages où les espacement et retours à la ligne ont assez peu d'importance, de fait 
+
+```cpp
+int main() {
+
+}
+```
+
+et
+
+
+```cpp
+int main()
+{
+    
+}
+```
+
+sont strictement équivalents et n'ont qu'un intérêt esthétique. J'utilise la deuxième forme ici par habitude et préférence personnelle, mais sentez-vous libre d'opter pour la première si vous la préférez.
+
+Bien, il ne nous reste plus que deux lignes à comprendre, les plus importantes car elles représentent le comportement de notre programme.
+
+```cpp
+std::cout << "Bonjour\n";
+```
+
