@@ -41,23 +41,33 @@ Ce caractère est important, il indique que la ligne concerne le préprocesseur,
 ___
 **Vue code**
 
-Après ce caractère nous avons l'instruction include, indiquant que nous souhaitons .. inclure, importer si vous préférez, un fichier définissant des instructions supplémentaires.
+Après ce caractère nous avons l'instruction include, indiquant que nous souhaitons .. inclure, importer si vous préférez, un fichier définissant des fonctionnalités supplémentaires.
+
+En C++ les includes sont très courants et sont actuellement le seul moyen de dire au compilateur que nous souhaitons utiliser des fonctionnalités autres que celles de base, très limitées. Afficher du texte en fait partie.
 
 ___
 **Vue caméra**
 
-En C++ les includes sont très courants et sont actuellement le seul moyen de dire au compilateur que nous souhaitons utiliser des fonctionnalités autres que celles de base, très limitées. Afficher du texte en fait partie.
+Dans la quasi-totalité des langages, vous ne pouvez rien faire sans utiliser des bibliothèques. Il s'agit d'un ensemble de fonctionnalités que nous pouvons utiliser pour donner plus de capacités à nos programmes.
+
+Et rien que le fait d'écrire du texte dans une console nécessite une bibliothèque, c'est dire à quel point de base on est limités.
 
 ___
 **Vue code**
 
 Ensuite nous avons une ligne vide, qui en C++ est simplement ignorée par le compilateur.
-Juste après, nous avons une ligne assez mystérieuse. Un nom de type suivi d'un autre nom suivi de parenthèses vides. Vous avez devant les yeux une déclaration de fonction.
+Juste après, nous avons une ligne intriguante. Un nom de type suivi d'un autre nom suivi de parenthèses vides. Aucun doute, vous avez devant les yeux une déclaration de fonction.
 
 ___
 **Vue caméra**
 
-Une fonction, tirant son nom des mathématiques, est l'endroit où s'exécute votre code. En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions. On aura l'occasion d'en reparler des fonctions, pour l'instant retenez surtout que tout programme, quel qu'il soit (exemples ?), s'exécute dans une fonction main et que lorsqu'il en sort, il est terminé.
+Une fonction, c'est une boite, une boite qui prend des paramètres (ou non) en entrée et qui ressort des valeurs (ou non) en sortie.
+Ici par exemple notre fonction ne prend aucun paramètre en entrée et sort un entier, nous verrons ça plus en détail par la suite.
+
+En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions. On aura l'occasion d'en reparler des fonctions, pour l'instant retenez surtout que tout programme, quel qu'il soit (exemples ?), s'exécute dans une fonction main et que lorsqu'il en sort, il est terminé.
+
+C'est donc dans la boite main que tout notre programme se déroule, et ça vaut pour tous les programmes de votre ordinateur, tous disposent d'une petite boite appelée "main" qu'ils n'ont pas encore quitté jusqu'à ce qu'ils soient fini.
+(Too much pour cette partie ? ^)
 
 ___
 **Vue code**
@@ -91,4 +101,76 @@ Bien, il ne nous reste plus que deux lignes à comprendre, les plus importantes 
 ```cpp
 std::cout << "Bonjour\n";
 ```
+
+___
+**Vue caméra**
+
+Vous vous souvenez quand je vous ai dit que les lignes se lisaient de gauche à droite ? Hé ben pour le coup, celle-ci s'explique plus facilement de droite à gauche.
+
+___
+**Vue code**
+
+```cpp
+"Bonjour\n"
+```
+
+On commence par définir du texte, ou chaîne de caractère, celui-ci est délimité par des guillemets.
+La seule petite surprise qui nous attend se trouve à la fin, avec un anti-slash + n.
+
+(\ = alt gr + 8 sur un clavier azerty français classique)
+
+___
+**Vue caméra**
+
+Dans une chaine de caractère, l'anti-slash sert à indiquer un caractère spécial, selon ce qui le suit. Dans ce cas particulier \n indique une nouvelle ligne, et donc que les prochains caractères doivent s'écrire à la ligne suivante.
+
+Vous tomberez d'ailleurs parfois sur \r\n, c'est un reliquat de l'époque où on avait besoin de dire aux imprimantes qu'il fallait revenir au début de la ligne puis passer la ligne suivante.
+
+___
+**Vue code**
+
+```cpp
+std::cout << "Bonjour\n";
+```
+
+Ensuite, à gauche, avons `std::cout`.
+
+Il s'agit d'une représentation du flux de sortie `cout`, c'est-à-dire l'endroit par lequel nous pouvons afficher quelque chose sur la console de notre programme. Nous verrons ça plus en détail après.
+
+Mais au fait, si le flux s'appelle `cout`, qu'est-ce que `std::` signifie ?
+
+___
+**Vue caméra**
+
+Vous vous rappelez quand je vous ai parlé des bibliothèques ? Ici nous utilisons la bibliothèque standard, et celle-ci utilise l'espace de nom `std`. On aura l'occasion d'en reparler des espaces de noms.
+
+___
+**Vue code**
+
+```cpp
+std::cout << "Bonjour\n";
+```
+
+Ainsi donc `std::cout` signifie dans ce cas "le machin `cout` faisant partie de `std`", et le machin dans ce cas précis est un flux de sortie, sur lequel nous effectuons une opération : écrire dedans. Cela se fait ici avec l'opérateur `<<`.
+
+___
+**Vue caméra**
+
+Fonction, bloc, flux de sortie, espace de nom, opérateur, ... ?
+
+Étant donné qu'il s'agit du premier cours de C++, je suis obligé d'introduire plein de notions et nous aurons largement l'occasion de rentrer dans les détails plus tard, ne vous inquiétez pas. C'est normal si vous ne comprenez pas tout du premier coup, ça viendra avec le temps.
+
+___
+**Vue code**
+
+```cpp
+std::cout << "Bonjour\n" << "YouTube!";
+```
+
+L'opérateur << nous permet donc d'écrire notamment les chaines de caractères que nous voulons, de gauche à droite. On se servira de ça dans la prochaine vidéo.
+
+___
+**Vue caméra**
+
+Voilà, nous sommes au bout de ce premier code en C++, assez simple à première vue mais tout de suite plus complexe lorsque vous cherchez à comprendre ce qu'il s'y passe exactement. Et comprenez bien que la vidéo aurait fait plusieurs heure si j'avais dû vous expliquer en détail tout ce qu'il se passe ici.
 
