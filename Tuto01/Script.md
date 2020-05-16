@@ -1,5 +1,6 @@
 **Gag intro**
 ___
+**Vue caméra**
 
 Bienvenue dans l'épisode 1 du tutoriel d'apprentissage du langage C++.
 Dans la vidéo précédente, nous avons vu ce qu'était le C++ et à quoi il pouvait servir, ainsi que les outils à utiliser. Je vous conseille de la regarder si vous n'avez pas ce qu'il faut (et de lire la description contenant les liens).
