@@ -99,7 +99,7 @@ sont strictement équivalents et n'ont qu'un intérêt esthétique. J'utilise la
 Bien, il ne nous reste plus que deux lignes à comprendre, les plus importantes car elles représentent le comportement de notre programme.
 
 ```cpp
-std::cout << "Bonjour\n";
+std::cout << "Bonjour !\n";
 ```
 
 ___
@@ -111,7 +111,7 @@ ___
 **Vue code**
 
 ```cpp
-"Bonjour\n"
+"Bonjour !\n"
 ```
 
 On commence par définir du texte, ou chaîne de caractère, celui-ci est délimité par des guillemets.
@@ -130,7 +130,7 @@ ___
 **Vue code**
 
 ```cpp
-std::cout << "Bonjour\n";
+std::cout << "Bonjour !\n";
 ```
 
 Ensuite, à gauche, avons `std::cout`.
@@ -148,7 +148,7 @@ ___
 **Vue code**
 
 ```cpp
-std::cout << "Bonjour\n";
+std::cout << "Bonjour !\n";
 ```
 
 Ainsi donc `std::cout` signifie dans ce cas "le machin `cout` faisant partie de `std`", et le machin dans ce cas précis est un flux de sortie, sur lequel nous effectuons une opération : écrire dedans. Cela se fait ici avec l'opérateur `<<`.
@@ -172,5 +172,42 @@ L'opérateur << nous permet donc d'écrire notamment les chaines de caractères 
 ___
 **Vue caméra**
 
-Voilà, nous sommes au bout de ce premier code en C++, assez simple à première vue mais tout de suite plus complexe lorsque vous cherchez à comprendre ce qu'il s'y passe exactement. Et comprenez bien que la vidéo aurait fait plusieurs heure si j'avais dû vous expliquer en détail tout ce qu'il se passe ici.
+Voilà, nous sommes au bout de ce premier code en C++, assez simple à première vue mais tout de suite plus complexe lorsque vous cherchez à comprendre ce qu'il s'y passe exactement. Et comprenez bien que la vidéo aurait fait plusieurs heures si j'avais dû vous expliquer en détail tout ce qu'il se passe ici.
 
+___
+**Vue code**
+
+Amusez-vous donc à changer le texte, à enchaîner les flux, voire pourquoi pas à afficher des nombres, que nous aborderons dans le deuxième chapitre de ce tutoriel.
+
+```cpp
+std::cout << "Il est " << 13 << "h" << 46 << "\n";
+```
+
+Notez cependant que vous allez très vite tomber sur une limitation.
+
+```cpp
+std::cout << "Bonjour à tous !\n";
+```
+
+Si vous êtes sous Windows, il y a de fortes chances pour que vos accents apparaissent de façon bizarre.
+
+___
+**Vue caméra**
+
+C'est dû à l'encodage de votre chaîne de caractère et au fait que la console de Windows est une très vieille dame. Si le sujet vous intéresse plus en profondeur, j'y ai consacré un article d'une vingtaine de pages sur mon devblog, dont le lien est en description.
+
+Mais pour dire les choses simplement, il n'y a pas de solution miracle. C'est pourquoi je vous conseillerais d'abandonner l'idée d'afficher des accents à ce stade.
+
+Voilà, nous sommes au bout de ce premier tutoriel sur le C++. Je sais que les choses doivent paraitre un peu floues mais ne vous inquiétez pas, ça va venir.
+
+Le C++ est un langage plutôt complexe à apprendre et il faut y aller petit à petit, et pratiquer, beaucoup pratiquer.
+
+Dans le prochain chapitre nous apprendrons ce que sont les types et les variables, et nous allons rendre notre petit programme un peu plus interactif !
+
+___
+**Conclusion**
+
+Merci d'avoir regardé ce premier épisode d'apprentissage du langage C++, je sais qu'il n'est pas parfait mais j'espère bien améliorer ça au fil des épisodes.
+N'hésitez pas à me dire ce que vous en avez pensé, mettre un commentaire, un poce bleu, la cloche et même la vache qui va avec.
+
+On se retrouve vite !
