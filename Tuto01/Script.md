@@ -37,14 +37,14 @@ Voyons donc la première ligne, celle-ci commence par un croisillon (souvent con
 ___
 **Vue caméra**
 
-Ce caractère est important, il indique que la ligne concerne le préprocesseur, que nous verrons plus en détail dans une vidéo à venir. Pour l'instant comprenez que ce n'est pas du code C++ classique.
+Ce caractère au début est important, il indique que la ligne concerne le préprocesseur, que nous verrons plus en détail dans une vidéo à venir. Pour l'instant comprenez que ce n'est pas du code C++ classique.
 
 ___
 **Vue code**
 
-Après ce caractère nous avons l'instruction include, indiquant que nous souhaitons .. inclure, importer si vous préférez, un fichier définissant des fonctionnalités supplémentaires.
+Après ce caractère nous avons l'instruction include, indiquant que nous souhaitons .. inclure, importer si vous préférez, une bibliothèque définissant des fonctionnalités supplémentaires.
 
-En C++ les includes sont très courants et sont actuellement le seul moyen de dire au compilateur que nous souhaitons utiliser des fonctionnalités autres que celles de base, très limitées. Afficher du texte en fait partie.
+En C++ les includes sont très courants et sont actuellement le seul moyen de dire au compilateur que nous souhaitons utiliser des fonctionnalités autres que celles de base. Afficher du texte en fait partie.
 
 ___
 **Vue caméra**
@@ -56,8 +56,10 @@ Et rien que le fait d'écrire du texte dans une console nécessite une biblioth�
 ___
 **Vue code**
 
-Ensuite nous avons une ligne vide, qui en C++ est simplement ignorée par le compilateur.
-Juste après, nous avons une ligne intriguante. Un nom de type suivi d'un autre nom suivi de parenthèses vides. Aucun doute, vous avez devant les yeux une déclaration de fonction.
+Ensuite nous avons une ligne vide, qui en C++ est simplement ignorée par le compilateur. Et juste après, nous avons une ligne intriguante: 
+un nom de type suivi d'un identificateur suivi de parenthèses vides. 
+
+Aucun doute, vous avez devant les yeux une déclaration de fonction.
 
 ___
 **Vue caméra**
@@ -65,10 +67,7 @@ ___
 Une fonction, c'est une boite, une boite qui prend des paramètres (ou non) en entrée et qui ressort des valeurs (ou non) en sortie.
 Ici par exemple notre fonction ne prend aucun paramètre en entrée et sort un entier, nous verrons ça plus en détail par la suite.
 
-En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions. On aura l'occasion d'en reparler des fonctions, pour l'instant retenez surtout que tout programme, quel qu'il soit (exemples ?), s'exécute dans une fonction main et que lorsqu'il en sort, il est terminé.
-
-C'est donc dans la boite main que tout notre programme se déroule, et ça vaut pour tous les programmes de votre ordinateur, tous disposent d'une petite boite appelée "main" qu'ils n'ont pas encore quitté jusqu'à ce qu'ils soient fini.
-(Too much pour cette partie ? ^)
+En C++, et dans les langages bas-niveau en général, votre programme ne peut s'exécuter qu'à l'intérieur de fonctions. On aura l'occasion d'en reparler des fonctions, pour l'instant retenez surtout que tout programme commence dans la fonction main.
 
 ___
 **Vue code**
