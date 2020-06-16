@@ -5,7 +5,24 @@ ___
 Bienvenue dans l'épisode 1 du tutoriel d'apprentissage du langage C++.
 Dans la vidéo précédente, nous avons vu ce qu'était le C++ et à quoi il pouvait servir, ainsi que les outils à utiliser. Je vous conseille de la regarder si vous n'avez pas ce qu'il faut (et de lire la description contenant les liens).
 
-Aujourd'hui nous allons enfin nous attaquer à la pratique, faire de vrais programmes, pour les bonhommes, qui en jettent un max, on va faire ... 
+Bon alors avant toute chose, il est important que je vous parle des différentes versions du C++ qui existent.
+
+Le C++ est un assez vieux langage, à l'origine créé comme amélioration du C en 1983, d'où son nom. Il fallu néanmoins attendre 1998 pour voir sa première normalisation, c'est-à-dire avoir un ensemble de règles décidées par un comité qui font du C++ ce qu'il est.
+
+Chaque normalisation suivante est associée à une année en particulier, et définit une nouvelle version du C++. En particulier la première normalisation est surnommée C++98.
+
+La normalisation suivante est arrivée en 2003 (C++03) et n'apportait que quelques corrections, on le confond d'ailleurs souvent avec le C++98.
+
+Il fallu attendre presque dix ans pour voir apparaitre la version suivante, en 2011. Le fameux C++11.
+Depuis, tous les trois ans nous avons une nouvelle norme du langage qui apporte son lot de fonctionnalités, il y a donc eu le C++14, C++17 et en fin d'année devrait sortir le C++20.
+
+Il y a deux points sur lesquels j'aimerai insister, le premier c'est que malgré son nom le C++ n'est pas du C avec des choses en plus. C'était vrai il y a plus de trente ans, ça ne l'est plus aujourd'hui. Le C a continué a évoluer indépendamment du C++ et même s'ils ont des bases communes, on ne programme pas de la même façon en C qu'en C++. N'apprennez pas le C pour ensuite apprendre le C++, ça vous donnera de mauvaises pratiques plus qu'autre chose.
+
+Et le second point, plus important encore, c'est que le C++11 dont j'ai parlé un peu avant a été une grosse cassure dans le langage, qu'on appelle le C++ moderne. Le langage a beaucoup changé, au point que les cours de C++ écrits qui ne prennent pas en compte les dernières versions sont tout simplement obsolètes et je ne recommande pas de les suivre aujourd'hui. C'est le cas de la majorité des cours que vous pourrez trouver en ligne par exemple. Les cours que je recommande sont dans la description.
+
+Ce cours-ci est basé sur le C++17, néanmoins je pointerai les différences avec les anciennes versions et je vous ferais un topo des changements de la prochaine norme quand c'est pertinent.
+
+Bon allez, il est plus que temps de s'attaquer à la pratique, faire de vrais programmes, pour les bonhommes, qui en jettent un max, on va faire ...
 
 ___
 **Vue code**
